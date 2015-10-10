@@ -1,0 +1,48 @@
+/*  Nav-bar CSS */
+.my-color{
+	color:white;
+	font-family:Lobster;
+}
+
+.circleimage{
+  margin:20px auto;
+	width: 200px;
+	height:200px;
+	border-radius:50%;
+  border:2px solid #64ffda;
+}
+
+.navcolor,footer{
+  background-color:#424242;
+}
+
+.icon-color{
+  color:#64ffda;
+}
+
+/*  Body Content CSS  */
+body{
+  background-color:#e0e0e0;
+}
+
+h1,h3{
+  font-family: Lobster;
+}
+
+h3, li{
+  color:#64ffda;
+}
+li{
+  font-family: Lora;
+}
+
+p{
+  font-family: Lora;
+  color:#64ffda;
+}
+
+.thumbnail{
+   background-color:#424242;
+   border:2px solid #64ffda;
+}
+
