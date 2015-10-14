@@ -29,8 +29,9 @@ h1,h3{
   font-family: Lobster;
 }
 
-h3, li{
+h2, li{
   color:#64ffda;
+  font-family: Lobster;
 }
 li{
   font-family: Lora;
@@ -44,5 +45,18 @@ p{
 .thumbnail{
    background-color:#424242;
    border:2px solid #64ffda;
+   height: 700px;
 }
+
+.circlecompany{
+  margin:20px auto;
+  width: 70px;
+  height:70px;
+  border-radius:50%;
+  border:2px solid #64ffda;
+}
+.circlecompany:hover{
+  opacity: 0.6;
+}
+
 
