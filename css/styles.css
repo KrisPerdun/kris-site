@@ -25,11 +25,12 @@ body{
   background-color:#e0e0e0;
 }
 
-h1,h3{
+h1{
   font-family: Lobster;
+
 }
 
-h2, li{
+h2,h3,li{
   color:#64ffda;
   font-family: Lobster;
 }
