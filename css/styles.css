@@ -36,6 +36,7 @@ h2,h3,li{
 }
 li{
   font-family: Lora;
+  list-style-type: none;
 }
 
 p{
@@ -59,5 +60,7 @@ p{
 .circlecompany:hover{
   opacity: 0.6;
 }
+
+
 
 
