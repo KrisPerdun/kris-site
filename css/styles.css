@@ -14,6 +14,7 @@
 
 .navcolor,footer{
   background-color:#424242;
+  padding: 75px;
 }
 
 .icon-color{
@@ -30,18 +31,21 @@ h1{
 
 }
 
-h2,h3,li{
+h2,h3{
   color:#64ffda;
   font-family: Lobster;
 }
 li{
   font-family: Lora;
   list-style-type: none;
+  color: whitesmoke;
+  font-size: 15px;
 }
 
 p{
   font-family: Lora;
-  color:#64ffda;
+  color:whitesmoke;
+  font-size: 15px;
 }
 
 .thumbnail{
@@ -59,6 +63,10 @@ p{
 }
 .circlecompany:hover{
   opacity: 0.6;
+}
+
+.footer-pad{
+  padding-bottom: 100px;;
 }
 
 
