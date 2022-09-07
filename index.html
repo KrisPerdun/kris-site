@@ -7,8 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Mobile First -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<!-- Libs -->
-	<link rel="stylesheet" type="text/css" href="js/libs/css/bootstrap.min.css"><!-- bootstrapCSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"><!-- Bootstrap 5.2.0 CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!-- Font Awesome 4.4.0 CDN-->
+	<!-- Google Font Styles CDN's -->
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
@@ -17,49 +18,59 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-default navcolor container-fluid">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<div class= "row">
-					<div class="col-xs-6 col-md-3">
-						<img class="circleimage" src="images/kris01.JPG" alt="Kris Perdun">
-					</div>
-					<div class="col-xs-6 col-md-4 col-md-offset-3">
-						<h1 class="my-color">Kristopher Perdun</h1>
-						<h3 class="my-color">Software Developer</h3>
-						<a href="https://github.com/KrisPerdun"target="_blank"><i class="fa fa-github-square fa-2x icon-color"></i></a>
-						<a href="https://www.linkedin.com/pub/kris-perdun/88/109/597"target="_blank"><i class="fa fa-linkedin-square fa-2x icon-color"></i></a>
-					</div>
-				</div>
+	<!-- Sticky Navbar -->
+<nav class="navbar sticky-top my-color float-end">
+  	<div class="container-fluid">
+		<a class="navbar-brand" href="#">
+			<img src="images/kris01.JPG" alt="KrisPerdun" width="30" height="24">
+		</a>
+		<a class="navbar-brand nav-link" href="#aboutMeScroll">About</a>
+		<a class="navbar-brand nav-link" href="#projectsScroll">Projects</a>
+		<a class="navbar-brand nav-link" href="#contactMeScroll">Contact</a>
+  	</div>
+</nav><!-- Navbar End-->
+
+	<!-- Top Content -->
+<div class="navcolor">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<center>
+				<img class="circleimage" src="images/kris01.JPG" alt="Kris Perdun">
+				<h1 class="my-color">Kristopher Perdun</h1>
+				<h3 class="my-color">Front End Developer</h3>
+				<a href="https://github.com/KrisPerdun"target="_blank"><i class="fa fa-github-square fa-2x icon-color switchColor"></i></a>
+				<a href="https://www.linkedin.com/pub/kris-perdun/88/109/597"target="_blank"><i class="fa fa-linkedin-square fa-2x icon-color switchColor"></i></a>
+				<a href="https://www.instagram.com/krisperdun/"target="_blank"><i class="fa fa-instagram fa-2x icon-color switchColor"></i></a>
 			</div>
 		</div>
-	</nav>
-	<!-- end Navbar -->
 
-	<!-- Things I Enjoy -->
-	<div class="row">
-		<div class="col-md-3 col-md-offset-2 list-group">
-			<center><h1>Things I Enjoy</h1>
-			<i class="fa fa-home fa-2x" style="font-size: 20px;"> Family Time</i>&nbsp;</a>
-			<i class="fa fa-code fa-2x" style="font-size: 20px;"> Coding</i>&nbsp;</a>
-			<i class="fa fa-gamepad fa-2x" style="font-size: 20px;"> Video Games</i>&nbsp;</a>
-			<hr>
-		</div>
-		
-	<!-- Contact Info -->
-		<div class="col-md-3 col-md-offset-2 list-group">
-			<center><h1>Contact Info</h1>
-			<i class="fa fa-mobile-phone fa-2x" style="font-size: 20px;"> (619) 288-8195</i>&nbsp;</a>
-			<i class="fa fa-envelope fa-2x" style="font-size: 20px;"> krisperdun@gmail.com</i>&nbsp;</a>
-			<hr>
+		<!-- Things I Enjoy-->
+		<div class="row">
+			<div class="col-md-6 my-color">
+				<center>
+				<h1>Things I Enjoy</h1>
+					<i class="fa fa-home fa-2x" style="font-size: 20px;"> Family Time</i>&nbsp;</a>
+					<i class="fa fa-code fa-2x" style="font-size: 20px;"> Coding</i>&nbsp;</a>
+					<i class="fa fa-gamepad fa-2x" style="font-size: 20px;"> Video Games</i>&nbsp;</a>
+					<hr>
+			</div>
+			<!-- Contact Info-->
+			<div class="col-md-6 my-color">
+				<center>
+				<h1>Contact Info</h1>
+					<i class="fa fa-mobile-phone fa-2x" style="font-size: 20px;"> (619) 288-8195</i>&nbsp;</a>
+					<i class="fa fa-envelope fa-2x" style="font-size: 20px;"> krisperdun@gmail.com</i>&nbsp;</a>
+					<hr>
+			</div>
 		</div>
 	</div>
+</div> <!-- Top Content End -->
 
-	<center><h1>About Me</h1>
-	<!-- Column 1 -->
-	<div class="row">
-		<div class="col-md-3 container-fluid">
+	<!-- About Me Section -->
+	<center><h1 id="aboutMeScroll">About Me</h1>
+	<div class="row" id="aboutMeScroll">
+		<div class="col">
 			<div class="thumbnail">
 				<img style="width: 450px; height: 300px" src="images/Who-Am-I-2.jpg" alt="Who Am I">
 				<div class="caption">
@@ -69,10 +80,10 @@
 					</p>
 				</div>
 			</div>
-		</div>
+		</div> <!-- About Me Section End -->
 
-	<!-- Column 2 -->
-		<div class="col-md-3 container-fluid">
+	<!-- Education Section -->
+		<div class="col container-fluid">
 			<div class="thumbnail">
 				<img style="width: 450px; height: 300px" src="images/education.jpg" alt="Education">
 				<div class="caption">
@@ -83,10 +94,10 @@
 					<p>GPA 3.25</p>
 				</div>
 			</div>
-		</div>
+		</div> <!-- Education Section End  -->
 
-	<!-- Column 3 -->
-		<div class="col-md-3 container-fluid">
+	<!-- Skills Section -->
+		<div class="col container-fluid">
 			<div class="thumbnail">
 				<img style="width: 450px; height: 300px" src="images/skills.jpg" alt="Skills">
 				<div class="caption">
@@ -102,90 +113,103 @@
 					<li>Web Design Fundamentals</li>
 				</div>
 			</div>
-		</div>
-
-	<!-- Column 4 -->
-	<div class="col-md-3 container-fluid">
-		<div class="thumbnail">
-			<img style="width: 450px; height: 300px" src="images/achievements.jpg" alt="Achievements">
-			<div class="caption">
-				<h2>Achievements</h2>
-				<p>
-					Some of my greatest achievements are still to come. With that being said if I had to list a few these would be them. 
-				</p>
-				<li>Deploying this site</li>
-				<li>Being a Web Developer</li>
-				<li>Being a Super Cool Dad</li>
-				<li>Being considered for the job</li>
-				<li>Graduating with an Associates Degree in Software Development</li>
-				
-			</div>
-		</div>
+		</div><!-- Skills Section End -->
 	</div>
+
+	<!-- Project Section -->
+	<h1 id="projectsScroll">Projects</h1>
+	<!-- Project 1-->
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Project Title</h5>
+					<img src="/images/code.jpg" alt="Project1" width="90%vw" height="90%vh">
+					<a href="#" class="btn">View Project <i class="fa fa-solid fa-folder-open"></i>&nbsp;</a>
+					<a href="#" class="btn">View Code <i class="fa fa-code "></i>&nbsp;</a>
+				</div>
+			</div>
+		</div><!-- Project 1 End-->
+
+		<!-- Project 2 -->
+		<div class="col-sm-4">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Project Title</h5>
+					<img src="/images/code.jpg" alt="Project1" width="90%vw" height="90%vh">
+					<a href="#" class="btn">View Project <i class="fa fa-solid fa-folder-open"></i>&nbsp;</a>
+					<a href="#" class="btn">View Code <i class="fa fa-code "></i>&nbsp;</a>
+				</div>
+			</div>
+		</div><!-- Project 2 End-->
+
+		<!-- Project 3 -->
+		<div class="col-sm-4">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Project Title</h5>
+					<img src="/images/code.jpg" alt="Project1" width="90%vw" height="90%vh">
+					<a href="#" class="btn">View Project <i class="fa fa-solid fa-folder-open"></i>&nbsp;</a>
+					<a href="#" class="btn">View Code <i class="fa fa-code "></i>&nbsp;</a>
+				</div>
+			</div>
+		</div><!-- Project 3 End-->
 	</div>
 
 	<!-- Companies Carrer Goals -->
 	<div class="row">
 		<div class="col-md-4">
-			<h1>Career Company Goals</h1>
-				<a href="http://www.google.com"target="_blank"><img class="circlecompany" src="images/google.gif" alt="Google"></a>
-				<a href="https://www.android.com/"target="_blank"><img class="circlecompany" src="images/android3.jpg" alt="Android"></a>
-				<a href="http://www.microsoft.com/en-us/"target="_blank"><img class="circlecompany" src="images/microsoft2.png" alt="Micorsoft"></a>
-				<a href="http://www.treyarch.com/"target="_blank"><img class="circlecompany" src="images/treyarch2.jpg" alt="Treyarch"></a>
-				<hr>
+			<h1>Desired Job</h1>
+				<a href="http://www.google.com"target="_blank"><img class="circlecompany switchColor" src="images/google.gif" alt="Google"></a>
+				<a href="https://www.apple.com/"target="_blank"><img class="circlecompany switchColor" src="images/apple.png" alt="Apple"></a>
+				<a href="http://www.microsoft.com/en-us/"target="_blank"><img class="circlecompany switchColor" src="images/microsoft2.png" alt="Micorsoft"></a>
 		</div>
 
 		<!-- Inspirations -->
 		<div class="col-md-4">
 			<h1>My Inspirations</h1>
-				<a href="http://www.nngroup.com/people/jakob-nielsen/"target="_blank"><img class="circlecompany" src="images/jakob.jpg" alt="Jakob Nielsen"></a>
-				<a href="http://travisneilson.com/"target="_blank"><img class="circlecompany" src="images/travis.jpg" alt="Travis Neilson"></a>
-				<a href="https://www.linkedin.com/pub/rob-sumabat/11/814/725"target="_blank"><img class="circlecompany" src="images/rob.jpg" alt="Rob Sumabat"></a>
-				<a href="http://www.mlwebco.com/"target="_blank"><img class="circlecompany" src="images/mike.jpg" alt="Mike Locke"></a>
-				<hr>
+				<a href="https://www.instagram.com/_user_called_vik/"target="_blank"><img class="circlecompany switchColor" src="images/vicPic.png" alt="Victor B"></a>
+				<a href="http://travisneilson.com/"target="_blank"><img class="circlecompany switchColor" src="images/travis.jpg" alt="Travis Neilson"></a>
+				<a href="https://www.linkedin.com/pub/rob-sumabat/11/814/725"target="_blank"><img class="circlecompany switchColor" src="images/rob.jpg" alt="Rob Sumabat"></a>
 		</div>
 
-		<!-- Companies Carrer Goals -->
+		<!-- Favorite Frameworks -->
 		<div class="col-md-4">
 			<h1>Favorite Frameworks</h1>
-				<a href="http://getbootstrap.com/"target="_blank"><img class="circlecompany" src="images/bootstrap.png" alt="Boostrap Framework"></a>
-				<a href="http://foundation.zurb.com/"target="_blank"><img class="circlecompany" src="images/foundation.jpg" alt="Foundation Framework"></a>
-				<a href="http://www.getmdl.io/"target="_blank"><img class="circlecompany" src="images/mdl.png" alt="Material Design Lite"></a>
-				<a href="http://nodeframework.com/"target="_blank"><img class="circlecompany" src="images/nodejs.png" alt="Node JS"></a>
-				<hr>
+				<a href="http://getbootstrap.com/"target="_blank"><img class="circlecompany switchColor" src="images/bootstrap.png" alt="Boostrap Framework"></a>
+				<a href="https://tailwindcss.com/"target="_blank"><img class="circlecompany switchColor" src="images/tailwind.jpg" alt="TailwindCSS Framework"></a>
+				<a href="https://reactjs.org/"target="_blank"><img class="circlecompany switchColor" src="images/React.png" alt="React JS"></a>
 		</div>
 	</div>
 	
 	<!-- Footer -->
 	<footer>
-		<div class="row">
+		<div class="row" id="contactMeScroll">
 			<div class="col-md-4">
 				<h3>Job Interests</h3>
 				<li>Front End Developer</li>
 				<li>Web Developer</li>
-				<li>Hourly $22-$25</li>
-				<li>Salary $45K-$52</li>
 				<li>San Diego CA</li>
 			</div>
 
 			<div class="col-md-4">
-				<h3>Follow Me</h3>
-				<a href="https://github.com/KrisPerdun"target="_blank"><i class="fa fa-github-square fa-2x icon-color"></i></a>
-				<a href="https://www.linkedin.com/pub/kris-perdun/88/109/597"target="_blank"><i class="fa fa-linkedin-square fa-2x icon-color"></i></a>
-			</div>
-
-			<div class="col-md-4">
-				<h3>Contact Me</h3>
-				<li>Kristopher Perdun</li>
+				<h3>Contact</h3>
 				<li>krisperdun@gmail.com</li>
 				<li>619-288-8195</li>
 			</div>
+
+			<div class="col-md-4">
+				<h3>Follow Me</h3>
+				<a href="https://github.com/KrisPerdun"target="_blank"><i class="fa fa-github-square fa-2x icon-color switchColor"></i></a>
+				<a href="https://www.linkedin.com/pub/kris-perdun/88/109/597"target="_blank"><i class="fa fa-linkedin-square fa-2x icon-color switchColor"></i></a>
+				<a href="https://www.instagram.com/krisperdun/"target="_blank"><i class="fa fa-instagram fa-2x icon-color switchColor"></i></a>
+			</div>
 		</div>
-	</footer>
+	</footer>	
 	
 
-	<script type="text/javascript" src="js/libs/jquery.js"></script><!-- jQuery -->
-	<script type="text/javascript" src="js/libs/bootstrap.min.js"></script><!-- bootstrap js -->
+	<!-- Bootstrap 5.2.0 CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 </html>

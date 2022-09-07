@@ -1,6 +1,6 @@
 /*  Nav-bar CSS */
 .my-color{
-	color:white;
+	color:#64ffda;
 	font-family:Lobster;
 }
 
@@ -19,6 +19,25 @@
 
 .icon-color{
   color:#64ffda;
+  
+}
+
+.sticky-top{
+  background-color: #64ffda;
+  border-radius: 25px;
+  margin: 10px 10px 0px 0px;
+}
+
+.navbar-brand:hover {
+  color: white;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2); 
+}
+
+.switchColor:hover {
+  color: white;
+ transition: all .2s ease-in-out;
+ transform: scale(1.2);
 }
 
 /*  Body Content CSS  */
@@ -28,12 +47,14 @@ body{
 
 h1{
   font-family: Lobster;
+  margin: 15px 0px 15px 0px;
 
 }
 
 h2,h3{
   color:#64ffda;
   font-family: Lobster;
+  margin: 15px 0px 15px 0px;
 }
 li{
   font-family: Lora;
@@ -46,6 +67,7 @@ p{
   font-family: Lora;
   color:whitesmoke;
   font-size: 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .thumbnail{
@@ -65,10 +87,19 @@ p{
   opacity: 0.6;
 }
 
+.btn{
+  margin: 15px 10px;
+  background-color: #64ffda;
+  color: #424242;
+  font-family:Lobster;
+}
+
+.btn:hover {
+  
+  transition: all .2s ease-in-out;
+  transform: scale(1.2); 
+}
+
 .footer-pad{
   padding-bottom: 100px;;
 }
-
-
-
-
