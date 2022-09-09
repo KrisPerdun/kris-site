@@ -101,6 +101,11 @@ p{
   transform: scale(1.2); 
 }
 
+.card-body{
+  background-color:#424242;
+  color:#0892D0;
+}
+
 .textOutline{
   -webkit-text-stroke: 0.2px white;
 }
