@@ -1,6 +1,6 @@
 /*  Nav-bar CSS */
 .my-color{
-	color:#64ffda;
+	color:#0892D0;
 	font-family:Lobster;
 }
 
@@ -9,7 +9,7 @@
 	width: 200px;
 	height:200px;
 	border-radius:50%;
-  border:2px solid #64ffda;
+  border:2px solid #0892D0;
 }
 
 .navcolor,footer{
@@ -18,12 +18,12 @@
 }
 
 .icon-color{
-  color:#64ffda;
+  color:#0892D0;
   
 }
 
 .sticky-top{
-  background-color: #64ffda;
+  background-color:#0892D0;
   border-radius: 25px;
   margin: 10px 10px 0px 0px;
 }
@@ -52,27 +52,28 @@ h1{
 }
 
 h2,h3{
-  color:#64ffda;
+  color:#0892D0;
   font-family: Lobster;
   margin: 15px 0px 15px 0px;
 }
+
 li{
-  font-family: Lora;
+  font-family:Roboto;
   list-style-type: none;
   color: whitesmoke;
-  font-size: 15px;
+  font-size:18px;
 }
 
 p{
-  font-family: Lora;
+  font-family:Roboto;
   color:whitesmoke;
-  font-size: 15px;
+  font-size: 18px;
   margin: 0px 15px 0px 15px;
 }
 
 .thumbnail{
    background-color:#424242;
-   border:2px solid #64ffda;
+   border:2px solid #0892D0;
    height: 700px;
 }
 
@@ -81,7 +82,7 @@ p{
   width: 70px;
   height:70px;
   border-radius:50%;
-  border:2px solid #64ffda;
+  border:2px solid #0892D0;
 }
 .circlecompany:hover{
   opacity: 0.6;
@@ -89,7 +90,7 @@ p{
 
 .btn{
   margin: 15px 10px;
-  background-color: #64ffda;
+  background-color: #0892D0;
   color: #424242;
   font-family:Lobster;
 }
@@ -98,6 +99,10 @@ p{
   
   transition: all .2s ease-in-out;
   transform: scale(1.2); 
+}
+
+.textOutline{
+  -webkit-text-stroke: 0.5px white;
 }
 
 .footer-pad{
